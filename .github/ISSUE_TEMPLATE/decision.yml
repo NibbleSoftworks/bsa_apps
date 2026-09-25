@@ -1,0 +1,37 @@
+name: Product atau architecture decision
+description: Selesaikan satu pilihan sebelum implementation yang bergantung padanya dimulai
+title: "[Decision]: "
+labels: ["type:decision", "needs:discussion"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Keputusan yang perlu dibuat
+      description: Tuliskan satu pertanyaan yang konkret.
+    validations:
+      required: true
+  - type: textarea
+    id: why_now
+    attributes:
+      label: Kenapa perlu diputuskan sekarang?
+      description: Tuliskan pekerjaan yang terblokir atau berubah karena keputusan ini.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Pilihan dan tradeoff
+      description: Sertakan minimal dua pilihan yang masuk akal beserta konsekuensinya.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence yang diperlukan
+      description: User yang perlu diajak bicara, prototype, policy, atau technical spike yang diperlukan.
+  - type: textarea
+    id: record
+    attributes:
+      label: Decision record
+      description: Maintainer mengisi pilihan, tanggal, dan alasan sebelum menutup issue.
+
