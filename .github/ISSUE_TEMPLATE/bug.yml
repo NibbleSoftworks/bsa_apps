@@ -1,0 +1,43 @@
+name: Bug report
+description: Laporkan behavior yang dapat diulang dan tidak sesuai dengan product agreement
+title: "[Bug]: "
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Apa yang terjadi?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Apa yang seharusnya terjadi?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Langkah untuk reproduce
+      placeholder: "1. ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versi atau commit Odoo dan addon
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log atau screenshot yang relevan
+      description: Hapus credentials, personal data, booking documents, dan private contact details.
+  - type: dropdown
+    id: security
+    attributes:
+      label: Apakah bug ini bisa mengekspos private data atau melewati permissions?
+      options: ["Tidak", "Belum yakin", "Ya, jangan tulis detail secara public"]
+    validations:
+      required: true
+

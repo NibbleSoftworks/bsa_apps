@@ -1,0 +1,52 @@
+name: Implementation task
+description: Feature, technical task, test, atau perubahan dokumentasi dengan scope yang jelas
+title: "[Task]: "
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: Sebelum membuat issue, baca product brief dan cari apakah issue serupa sudah ada.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Apa yang bisa dilakukan user, administrator, atau contributor setelah task ini selesai?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Jelaskan kebutuhan dan tambahkan link ke issue atau decision terkait.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Gunakan checklist yang dapat diamati dan diverifikasi.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Jelaskan behavior terkait yang sengaja tidak termasuk dalam issue ini.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Cara verification
+      description: Tuliskan test, command, atau manual steps yang bisa dipakai reviewer.
+    validations:
+      required: true
+  - type: checkboxes
+    id: readiness
+    attributes:
+      label: Readiness
+      options:
+        - label: Task ini tidak memiliki product decision yang belum selesai.
+          required: true
+        - label: Task ini cukup kecil untuk satu focused pull request.
+          required: true
+
